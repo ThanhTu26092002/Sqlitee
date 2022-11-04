@@ -1,24 +1,24 @@
 package com.example.sql;
 
 public class User {
-    private int id;
-    private  String name;
+    private int id_326;
+    private  String name_ThanhTu;
     private  String des;
 
     public int getId() {
-        return id;
+        return id_326;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.id_326 = id;
     }
 
     public String getName() {
-        return name;
+        return name_ThanhTu;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name_ThanhTu = name;
     }
 
     public String getDes() {
