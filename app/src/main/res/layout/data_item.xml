@@ -7,15 +7,16 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:src="@drawable/ic_smartphone"/>
+
     <TextView
         android:id="@+id/tvName"
-        android:textSize="20sp"
-        android:text="Name"
-        android:textStyle="bold"
-        android:textColor="#123"
-        android:layout_toRightOf="@+id/ivAvatar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:text="Name"
+        android:textColor="#123"
+        android:textSize="20sp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/tvDes"
         android:layout_below="@+id/tvName"

@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void insertRow(){
         String name = editName.getText().toString();
-        String des = editName.getText().toString();
+        String des = editDes.getText().toString();
         String sql = "INSERT INTO tbsmartphone (name,des) VALUES ('" + name + "','" + des + "')";
         db.execSQL(sql);
     }
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         Cursor cursor = db.rawQuery(sql, null);
 
         cursor.moveToFirst();
-        while (!cursor.moveToLast()){
+        while (!cursor.isAfterLast()){
             int id = cursor.getInt(0);
             String name = cursor.getString(1);
             String des = cursor.getString(2);
